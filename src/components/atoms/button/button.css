@@ -1,0 +1,13 @@
+.btn:hover{
+    background: transparent;
+    transition: .3s;
+    color: black;
+}
+.btn{
+    border-radius: 8px;
+    display: inline-block;
+    background: #6dabe4;
+    color: #fff;
+    border-bottom: none;
+    width: 100%;
+}

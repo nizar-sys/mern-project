@@ -1,0 +1,21 @@
+.input-wrapper {
+}
+.label {
+  font-size: 16px;
+  color: #2d2d2d;
+  margin: 0px;
+  position: absolute;
+}
+.input-form {
+  width: 100%;
+  display: block;
+  border: none;
+  border-bottom: 1px solid #999;
+  padding: 6px 30px;
+  font-family: Poppins;
+  box-sizing: border-box;
+}
+.form-group {
+    position: relative;
+    overflow: hidden;
+}
