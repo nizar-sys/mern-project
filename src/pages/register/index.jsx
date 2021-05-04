@@ -4,8 +4,10 @@ import "./register.css";
 import 'font-awesome/css/font-awesome.min.css';
 import { RegisterBg } from "../../assets";
 import { Button, Gap, Input, Link } from "../../components";
+import { useHistory } from "react-router";
 
 const Register = () => {
+  const history = useHistory()
   return (
     <div className="main-page d-flex">
       <div className="left">
@@ -17,9 +19,9 @@ const Register = () => {
         <Input label="Email" placeholder="Email" />
         <Input label="Password" placeholder="Password" />
         <Gap height={10}/>
-        <Button title="Register" className="btn btn-primary"/>
+        <Button title="Register" className="btn btn-primary" onClick={()=>history.push('/login')}/>
         <Gap height={100}/>
-        <Link title="Back to Login"/>
+        <Link title="Back to Login" onClick={()=>history.push('/login')}/>
       </div>
     </div>
   );
